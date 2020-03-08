@@ -14,6 +14,15 @@ It is a simple crud application using Spring Boot with NoSQL database - MongoDB.
 
 ## MongoDB integration with Spring Boot
 
+Add this dependency into your `pom.xml` file:
+```xml
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-data-mongodb</artifactId>
+</dependency>
+```
+
+
 ## References
 * [SQL vs NoSQL](https://www.guru99.com/sql-vs-nosql.html)
 * [Horizontal vs Vertical Scaling](https://github.com/vaquarkhan/vaquarkhan/wiki/Difference-between-scaling-horizontally-and-vertically)
