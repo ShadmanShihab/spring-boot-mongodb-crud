@@ -13,24 +13,9 @@ It is a simple crud application using Spring Boot with NoSQL database - MongoDB.
 | 6  | Delete all record    | /students      | DELETE       | X                                                      |
 
 
-## MongoDB integration with Spring Boot
+## MongoDB Commands
+- updating........
 
-Add this dependency into your `pom.xml` file if you not chose this dependency while creating new project:
-```xml
-<dependency>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-data-mongodb</artifactId>
-</dependency>
-```
-
-Update `application.properties` file like this:
-```
-server.port=8087
- 
-spring.data.mongodb.host=localhost
-spring.data.mongodb.port=27017
-spring.data.mongodb.database=StudentDetail
-```
 
 ## References
 * [SQL vs NoSQL](https://www.guru99.com/sql-vs-nosql.html)
