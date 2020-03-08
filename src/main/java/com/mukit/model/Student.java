@@ -7,15 +7,15 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Student {
 	
 	@Id
-	private Long Id;
+	private Long _id;
 	private String name;
 	private String dept;
 	
 	public Long getId() {
-		return Id;
+		return _id;
 	}
 	public void setId(Long id) {
-		Id = id;
+		_id = id;
 	}
 	public String getName() {
 		return name;
@@ -35,14 +35,14 @@ public class Student {
 	}
 	
 	public Student(Long id, String name, String dept) {
-		Id = id;
+		_id = id;
 		this.name = name;
 		this.dept = dept;
 	}
 	
 	@Override
 	public String toString() {
-		return "Student [Id=" + Id + ", name=" + name + ", dept=" + dept + "]";
+		return "Student [Id=" + _id + ", name=" + name + ", dept=" + dept + "]";
 	}
 	
 	
