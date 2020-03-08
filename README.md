@@ -22,6 +22,14 @@ Add this dependency into your `pom.xml` file:
 </dependency>
 ```
 
+Update `application.properties` file like this:
+```
+server.port=8087
+ 
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+spring.data.mongodb.database=StudentDetail
+```
 
 ## References
 * [SQL vs NoSQL](https://www.guru99.com/sql-vs-nosql.html)
