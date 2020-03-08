@@ -4,6 +4,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.mukit.model.Student;
 
-public interface StudentRepository extends MongoRepository<Student, Long>{
+public interface StudentRepository extends MongoRepository<Student, Long> {
 
 }

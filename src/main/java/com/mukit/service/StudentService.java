@@ -11,21 +11,21 @@ import com.mukit.repository.StudentRepository;
 
 @Service
 public class StudentService {
-	
+
 	@Autowired
 	StudentRepository studentRepository;
-	
+
 	public boolean createStudent(Student student) {
 		try {
 			studentRepository.save(student);
 			return false;
-		}catch(IllegalArgumentException e) {
+		} catch (IllegalArgumentException e) {
 			return false;
 		}
-		
+
 	}
-	
-	public List<Student> findAll(){
+
+	public List<Student> findAll() {
 		return studentRepository.findAll();
 	}
 

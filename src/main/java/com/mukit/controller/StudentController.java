@@ -32,23 +32,23 @@ public class StudentController {
 	public List<Student> findAll() {
 		return studentService.findAll();
 	}
-	
+
 	@GetMapping("/{id}")
 	public Optional<Student> findById(@PathVariable("id") Long id) {
 		System.out.println(id);
 		return studentService.findById(id);
 	}
-	
+
 	@PutMapping("/{id}")
 	public void updateById(@PathVariable("id") Long id, @RequestBody Student student) {
 		studentService.updateStudent(id, student);
 	}
-	
+
 	@DeleteMapping("/{id}")
 	public void deleteById(@PathVariable("id") Long id) {
 		studentService.deleteStudent(id);
 	}
-	
+
 	@DeleteMapping
 	public void deleteAll() {
 		studentService.deleteAllStudent();
