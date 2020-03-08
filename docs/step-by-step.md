@@ -2,19 +2,34 @@
 
 ## Step 1:
 Create a new project
+
 ![](img/step-1.png)
 ## Step 2:
 Fill all the fields like below image
+
 ![](img/step-2.png)
 ## Step 3:
 Choose `SpringWeb` and `Spring Data MongoDB` and click `Finish`
+
 ![](img/step-3.png)
 ## Step 4:
 Create 4 packages like below image inside `src/main/java`
+
 ![](img/step-4.png)
 ## Step 5:
 Create class and interface like below image inside created packages in above step
+
 ![](img/step-5.png)
+
+## Step 6:
+Update `application.properties` file like this:
+```
+server.port=8087
+ 
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+spring.data.mongodb.database=StudentDetail
+```
 
 ## Source Code
 
@@ -87,6 +102,7 @@ import com.mukit.model.Student;
 public interface StudentRepository extends MongoRepository<Student, Long> {
 
 }
+```
 
 ### Service
 ```java
@@ -140,7 +156,6 @@ public class StudentService {
 
 ```
 
-```
 ### Controller
 ```java
 package com.mukit.controller;

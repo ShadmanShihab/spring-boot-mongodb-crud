@@ -1,5 +1,6 @@
 # Spring-Boot-MongoDB-CRUD application
 It is a simple crud application using Spring Boot with NoSQL database - MongoDB.
+- [Step By Step Guide](docs/step-by-step.md)
 
 ## Functionality
 | SL | Action               | Endpoint       | Request Type | Payload                                                |
@@ -14,7 +15,7 @@ It is a simple crud application using Spring Boot with NoSQL database - MongoDB.
 
 ## MongoDB integration with Spring Boot
 
-Add this dependency into your `pom.xml` file:
+Add this dependency into your `pom.xml` file if you not chose this dependency while creating new project:
 ```xml
 <dependency>
 	<groupId>org.springframework.boot</groupId>
