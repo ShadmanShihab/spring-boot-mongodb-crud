@@ -1,4 +1,4 @@
-# Step by Step guide of building Spring Boot CRUD application with MongoDB
+# Step by Step guide of creating Spring Boot CRUD application with MongoDB
 
 ## Step 1:
 Create a new project
